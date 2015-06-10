@@ -5,18 +5,18 @@ main ()
   float p, q;
   char meas;
 
-printf ("Hello and welcome to PriceCalculator\n");
+printf ("Hello and welcome to PriceCalculator\n\n\n");
 // ******************************************* //
 printf ("Please choose abbreviated measurement type:\n");
-scanf ("%2c\n", &meas);
+scanf ("%2c", &meas);
 // ******************************************** //
-printf ("Please Enter Price:\n");
+printf ("\nPlease Enter Price:\n");
 scanf ("%f", &p);
 // **************************************** //
-printf ("Please Enter Quantity:\n");
+printf ("\nPlease Enter Quantity:\n");
 scanf ("%f", &q);
 // **************************************** //
   float tp = (p / q);
-  printf ("The price per %c is %f %c \n", meas, tp, meas);
+  printf ("\nThe price is %f per %c \n\n", tp, meas);
 // *******====>>>>>Reset Button Here<<<<<=======******* //
 }
