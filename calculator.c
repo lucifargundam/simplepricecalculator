@@ -2,21 +2,21 @@
 
 main ()
 {
-  char c;
-  double p, q;
-  double tp = (p / q);
+  float p, q;
+  char meas;
 
-  printf ("Hello and welcome to PriceCalculator\n");
+printf ("Hello and welcome to PriceCalculator\n");
 // ******************************************* //
 printf ("Please choose abbreviated measurement type:\n");
-scanf ("%4s", c);
+scanf ("%2c\n", &meas);
 // ******************************************** //
 printf ("Please Enter Price:\n");
-scanf ("%g", p);
+scanf ("%f", &p);
 // **************************************** //
 printf ("Please Enter Quantity:\n");
-scanf ("%g", q);
+scanf ("%f", &q);
 // **************************************** //
-printf ("The price per &meas is %g %c\n", tp, c);
+  float tp = (p / q);
+  printf ("The price per %c is %f %c \n", meas, tp, meas);
 // *******====>>>>>Reset Button Here<<<<<=======******* //
 }
